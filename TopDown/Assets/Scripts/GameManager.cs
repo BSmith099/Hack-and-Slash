@@ -11,9 +11,21 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject pauseText;
 
-    int score;
+    public int score;
 
     private float fixedDeltaTime;
+
+    public PlayerData PlayerData {  get; private set; }
+
+    private void OnEnable()
+    {
+        PlayerData = PlayerPersistence.LoadData();
+    }
+
+    private void OnDisable()
+    {
+        PlayerPersistence.SaveData(this);
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
