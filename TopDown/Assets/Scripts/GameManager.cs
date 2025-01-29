@@ -13,18 +13,21 @@ public class GameManager : MonoBehaviour
 
     public int score;
 
+    public int currentCash;
+
     private float fixedDeltaTime;
 
-    public PlayerData PlayerData {  get; private set; }
+    [SerializeField] PlayerPersistence pPer;
+    public PlayerData playerData { get; private set; }
 
     private void OnEnable()
     {
-        PlayerData = PlayerPersistence.LoadData();
+        pPer.LoadData();
     }
 
     private void OnDisable()
     {
-        PlayerPersistence.SaveData(this);
+        pPer.SaveData(this);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
