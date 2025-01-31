@@ -18,7 +18,7 @@ public class MoneyTextScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        totalMoney = gameManager.currentCash;
+        totalMoney = gameManager.PlayerData.Money;
         moneyText.text = totalMoney.ToString();
     }
 }

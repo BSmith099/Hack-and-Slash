@@ -1,19 +1,13 @@
 using UnityEngine;
 
-public class PlayerPersistence : MonoBehaviour
+public static class PlayerPersistence
 {
-    public void SaveData(GameManager gameManager)
+    public static void SaveData(GameManager gameManager)
     {
-        PlayerPrefs.SetInt("money", gameManager.score);
+        PlayerPrefs.SetInt("money", gameManager.score + gameManager.PlayerData.Money);
     }
 
-    public void DeletePlayerStats()
-    {
-        PlayerPrefs.DeleteAll();
-        print("Data is " + PlayerPrefs.GetInt("money"));
-    }
-
-    public PlayerData LoadData()
+    public static PlayerData LoadData()
     {
         int money = PlayerPrefs.GetInt("money");
 
