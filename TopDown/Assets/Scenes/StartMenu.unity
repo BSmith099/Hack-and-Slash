@@ -417,9 +417,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 3433c5a441df9f740985a3999b8ccc00, type: 3}
+      - m_Target: {fileID: 1233075694}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: RestPlayerScoreButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -770,7 +770,6 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   pauseText: {fileID: 0}
   score: 0
-  currentCash: 0
 --- !u!4 &1233075695
 Transform:
   m_ObjectHideFlags: 0

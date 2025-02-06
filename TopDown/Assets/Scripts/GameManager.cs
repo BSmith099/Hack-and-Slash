@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        StartCoroutine(GameOverCoroutine());    
+        StartCoroutine(GameOverCoroutine());
     }
 
     public void UpdateScore(int points)
@@ -61,6 +61,11 @@ public class GameManager : MonoBehaviour
         {
             score += points;
         }  
+    }
+
+    public void RestPlayerScoreButton()
+    {
+        PlayerPersistence.ResetScore(this);
     }
 
     public void StartGame()
