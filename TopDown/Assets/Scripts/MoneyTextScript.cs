@@ -21,4 +21,5 @@ public class MoneyTextScript : MonoBehaviour
         totalMoney = gameManager.PlayerData.Money;
         moneyText.text = totalMoney.ToString();
     }
+
 }
