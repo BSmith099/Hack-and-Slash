@@ -1,7 +1,10 @@
 using System.Collections;
+using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +14,15 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject pauseText;
 
+    //public SpriteRenderer spriteRenderer;
+    public UnityEngine.UI.Image m_Image;
+    public GameObject backgroundObject;
+    public Sprite backgroundImage;
+    public Sprite backgroundArtOne;
+    public Sprite backgroundArtTwo;
+
     public int score;
+    public int imgNumberCount;
 
     private float fixedDeltaTime;
 
@@ -67,6 +78,32 @@ public class GameManager : MonoBehaviour
     {
         PlayerPersistence.ResetScore(this);
     }
+
+    public void NewBackgroundArtButton()
+    {
+        switch(imgNumberCount)
+        {
+            case 0:
+                m_Image = backgroundObject.GetComponent<UnityEngine.UI.Image>();
+                m_Image.sprite = backgroundArtOne;
+                imgNumberCount++;
+                break;
+            
+            case 1:
+                m_Image = backgroundObject.GetComponent<UnityEngine.UI.Image>();
+                m_Image.sprite = backgroundArtTwo;
+                imgNumberCount++;
+                imgNumberCount = 0;
+                break;
+            
+            default:
+                Debug.Log("Error in Background Button");
+                break;
+        }
+    }
+
+
+
 
     public void StartGame()
     {
