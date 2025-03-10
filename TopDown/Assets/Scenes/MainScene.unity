@@ -2159,7 +2159,7 @@ GameObject:
   - component: {fileID: 1175182450}
   - component: {fileID: 1175182449}
   m_Layer: 0
-  m_Name: Grass_Patch
+  m_Name: Circuit_Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2289,7 +2289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 162.1, y: -234}
+  m_AnchoredPosition: {x: 1488, y: -586}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196581418
@@ -2803,7 +2803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 80b0f71ec8b5af7449b680ce5d6dd54f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e67e22feefd6b945ac57352cb9367cf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2984,8 +2984,13 @@ MonoBehaviour:
   gameOver: 0
   scoreText: {fileID: 1196581418}
   pauseText: {fileID: 963985370}
+  m_Image: {fileID: 0}
+  backgroundObject: {fileID: 0}
+  backgroundImage: {fileID: 0}
+  backgroundArtOne: {fileID: 0}
+  backgroundArtTwo: {fileID: 0}
   score: 0
-  currentCash: 0
+  imgNumberCount: 0
 --- !u!4 &2035204065
 Transform:
   m_ObjectHideFlags: 0

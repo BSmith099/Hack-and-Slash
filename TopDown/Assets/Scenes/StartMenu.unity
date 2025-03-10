@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_Image: {fileID: 0}
   backgroundObject: {fileID: 1994520836}
   backgroundImage: {fileID: 0}
-  backgroundArtOne: {fileID: 21300000, guid: 4a66ecac025385c43bc8ab723382ecc8, type: 3}
+  backgroundArtOne: {fileID: 21300000, guid: ebf5d8a8be67ae34c85bab7578daf99e, type: 3}
   backgroundArtTwo: {fileID: 21300000, guid: 83b81108b3def4f4cbf1a070bd202497, type: 3}
   score: 0
   imgNumberCount: 0
@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4a66ecac025385c43bc8ab723382ecc8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ebf5d8a8be67ae34c85bab7578daf99e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
